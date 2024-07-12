@@ -10,32 +10,55 @@
     <div id="game-container">
         <h1> Shadow Vault </h1>
         <div id="game-background">
-            <div id="puzzle-area" class="grid"> 
+            <div id="vault-setup">
+                <h2>Vault Setup</h2>
+                <form id="vault-setup-form">
+                    <label for="passcode">Passcode:</label>
+                    <input type="text" id="passcode" required><br>
+                    <label for="hint">Hint:</label>
+                    <input type="text" id="hint"><br>
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select><br>
+                    <button type="submit">Set Vault</button>
+                </form>
+            </div>
+            <div id="vault-content-setup" style="display: none;">
+                <h2>Vault Content</h2>
+                <form id="vault-content-form">
+                    <label for="content">Vault Content:</label>
+                    <textarea id="content" rows="20" required></textarea><br>
+                    <button type="submit">Add Content</button>
+                </form>
+            </div>
+            <div id="puzzle-area" class="grid" style="display: none;"> 
                  <!-- Grid cells will go here -->
             </div>
-            </div> 
-    </div>
-     <div id="candle-table">
+        </div> 
+        <div id="candle-table">
                     <img src="Images/Candle1.png" alt="Candle" class="draggable" id="candle1">
                     <img src="Images/Candle2.png" alt="Candle" class="draggable" id="candle2">
                     <img src="Images/Candle3.png" alt="Candle" class="draggable" id="candle3">
                     <img src="Images/Candle4.png" alt="Candle" class="draggable" id="candle4">
                     <img src="Images/Candle5.png" alt="Candle" class="draggable" id="candle5">
                     <img src="Images/Candle6.png" alt="Candle" class="draggable" id="candle6">
-            </div>
-           </div>
-    <div id="candle-positions">
-            <!-- Placeholders for candles to snap to -->
+        </div>
+        <div id="candle-positions">
+        <!-- Placeholders for candles to snap to -->
         <div class="placeholder"></div>
         <div class="placeholder"></div>
         <div class="placeholder"></div>
         <div class="placeholder"></div>
         <div class="placeholder"></div>
         <div class="placeholder"></div>
-     </div>
     </div>
-        <div id="control-panel">
-            <!-- Controls for reset and maybe hints or game info -->
+    <div id="control-panel"> style="display: none;">
+            <input type="text" id="passcode-input" placeholder="Enter passcode">
+            <button id="unlock-button">Unlock Vault</button>
+            <div id="vault-content" style="display: none;">
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ccxt/4.3.36/ccxt.browser.min.js"></script>

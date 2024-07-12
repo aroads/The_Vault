@@ -8,6 +8,10 @@ This project is a web-based puzzle game that challenges players to manipulate li
 - Interactive Candle Movement
 - Dynamic Shadow Alignment Checking
 - Password-based Vault Unlock System
+- AI-Assisted Gameplay:
+    - AI dynamically adjusts puzzle difficulty based on player performance.
+    - AI generates contextually appropriate hints to assist players.
+    - AI-driven feedback to help players improve their puzzle-solving skills.
 
 ## Technologies Used
 - HTML
@@ -19,9 +23,16 @@ This project is a web-based puzzle game that challenges players to manipulate li
 2. Open `index.html` in your browser to start playing the game.
 
 ## How to Play
-- Drag the candles to manipulate shadows on the wall.
-- Match the shadows with the outlined symbols.
-- Solve the puzzles to uncover words that form the vault's password.
+- Register or log in to create your player profile.
+- Vault Setter:
+  - Set a passcode, difficulty level, and vault content.
+- Vault Solver:
+  - Drag the candles to manipulate shadows on the wall.
+  - Match the shadows with the outlined symbols.
+  - Solve the puzzles to uncover words that form the vault's password.
+  - Use AI-generated hints if needed.
+  - Enter the correct passcode to unlock the vault and claim the rewards.
+  - Reset the vault and challenge a friend.
 
 ## Contributing
 Contributions are welcome. Please fork this repository and open a pull request to add more features or fix bugs.
